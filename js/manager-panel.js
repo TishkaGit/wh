@@ -450,6 +450,8 @@ function renderContractsTable() {
                     <div class="action-buttons">
                         <button class="btn-icon btn-view" onclick="viewContract(${contract.id})">👁️ Просмотр</button>
                         <button class="btn-icon btn-success" onclick="openAddScheduleModal(${contract.id})">📅 График</button>
+                        <button class="btn-icon btn-print" onclick="printContract(${contract.id})">🖨️ Печать</button>
+                        <button class="btn-icon btn-pdf" onclick="exportContractToPdf(${contract.id})">📄 PDF</button>
                     </div>
                 </td>
             </tr>
@@ -1261,3 +1263,5 @@ window.addScheduleRowForProduct = addScheduleRowForProduct;
 window.removeScheduleRow = removeScheduleRow;
 window.toggleSelectAllSchedule = toggleSelectAllSchedule;
 window.openContractFromSchedule = openContractFromSchedule;
+window.printContract = printContract;
+window.exportContractToPdf = exportContractToPdf;
